@@ -16,15 +16,12 @@ function alternatingCharacters(s) {
     //     i--
     // }
 
-
     //forEach
     [...s].forEach((eachLet, idx) => {
-
         if(eachLet === s[idx-1]){
             count++
         }
     })
-
     return count
 }
 
