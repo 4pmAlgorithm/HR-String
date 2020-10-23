@@ -8,19 +8,25 @@ function alternatingCharacters(s) {
     //         }
     // }
 
-    let i = s.length-1
-    while(i >= 0){
-        if(s[i] === s[i+1]){
+    // let i = s.length-1
+    // while(i >= 0){
+    //     if(s[i] === s[i+1]){
+    //         count++
+    //     }
+    //     i--
+    // }
+
+
+    //forEach
+    [...s].forEach((eachLet, idx) => {
+
+        if(eachLet === s[idx-1]){
             count++
         }
-        i--
-    }
+    })
 
-
-
-    
     return count
 }
 
 
-console.log(alternatingCharacters("AABA"))
+console.log(alternatingCharacters("AABAABBBA"))
