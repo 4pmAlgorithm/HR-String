@@ -54,7 +54,11 @@ function superReducedString(s) {
 
 
 
-  //**********************************************************//    
+
+
+//**********************************************************//  
+//for loop 
+//**********************************************************//    
     var arr = s.split('');
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] === arr[i + 1]) {
@@ -68,7 +72,28 @@ function superReducedString(s) {
     console.log(arr.join(''));
     }
 
+
     
+
+    function superReducedString(s) {
+        const stringArr = s.split(“”)
+        let size = stringArr.length
+        let idx = 0
+        while(idx < size) {
+            if(stringArr[idx] === stringArr[idx+1]) {
+                stringArr.splice([idx], 2)
+                size = stringArr.length
+                idx = 0
+            } else{
+              idx++
+            }
+        }
+        if(stringArr.length === 0) {
+            return “Empty String”
+        } else {
+            return stringArr.join(“”)
+        }
+
 
     // //**********************************************************//
     // char[] charArr = s.toCharArray();
