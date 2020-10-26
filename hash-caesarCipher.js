@@ -1,8 +1,10 @@
-//10/23/2020 7pm-11pm , 10/24 10:30 - 11:50am
-// Complete the caesarCipher function below.
-//my try but not passing every cases. fails symbols and k larger than 26
-// Complete the caesarCipher function below.
+// input: ("Always-Look-on-the-Bright-Side-of-Life", 5)
+// output: Fqbfdx-Qttp-ts-ymj-Gwnlmy-Xnij-tk-Qnkj
 
+
+
+
+//10/23/2020 7pm-11pm , 10/24 10:30 - 11:50am
 function caesarCipher(s, k) {
 
     if(k===0){
